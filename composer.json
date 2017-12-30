@@ -1,0 +1,51 @@
+{
+    "name": "emiliolodigiani/laravel-bs3",
+    "description": "Bootstrap 3 view partials for Laravel.",
+    "keywords": [
+        "emiliolodigiani",
+        "laravel-bs3",
+        "laravel"
+    ],
+    "homepage": "https://github.com/emiliolodigiani/laravel-bs3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emilio Lodigiani",
+            "email": "emiliolodigiani@gmail.com",
+            "homepage": "http://lodigiani.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emiliolodigiani\\Bs3\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "emiliolodigiani\\Bs3\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emiliolodigiani\\Bs3\\Bs3ServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}

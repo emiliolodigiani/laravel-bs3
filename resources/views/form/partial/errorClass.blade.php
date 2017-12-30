@@ -1,0 +1,1 @@
+{{ $errors->has($name) ? ' has-error' : '' }}
