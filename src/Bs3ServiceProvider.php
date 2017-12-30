@@ -17,7 +17,7 @@ class Bs3ServiceProvider extends ServiceProvider
                 __DIR__.'/../config/bs3.php' => config_path('bs3.php'),
             ], 'config');
             */
-            $this->loadViewsFrom(__DIR__.'/../resources/views', 'skeleton');
+            $this->loadViewsFrom(__DIR__.'/../resources/views', 'bs3');
             /*
             $this->publishes([
                 __DIR__.'/../resources/views' => base_path('resources/views/vendor/bs3'),
