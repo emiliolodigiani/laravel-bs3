@@ -1,10 +1,12 @@
-# Very short description of the package
+# Laravel Bootstrap 3 view partials
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/emiliolodigiani/laravel-bs3.svg?style=flat-square)](https://packagist.org/packages/emiliolodigiani/laravel-bs3)
 [![Build Status](https://travis-ci.org/emiliolodigiani/laravel-bs3.svg?branch=master)](https://travis-ci.org/emiliolodigiani/laravel-bs3)
 [![Total Downloads](https://img.shields.io/packagist/dt/emiliolodigiani/laravel-bs3.svg?style=flat-square)](https://packagist.org/packages/emiliolodigiani/laravel-bs3)
 
 Package for adding precomposed Twitter Bootstrap 3 view partials, such as forms, form inputs, panels, buttons, etc.  
+
+The package is mainly intended for internal use and it's not fully documented yet.
 
 ## Installation
 
