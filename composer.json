@@ -1,6 +1,6 @@
 {
     "name": "emiliolodigiani/laravel-bs3",
-    "description": "Bootstrap 3 view partials for Laravel.",
+    "description": "Bootstrap 3 view partials for Laravel 5.x",
     "keywords": [
         "emiliolodigiani",
         "laravel-bs3",
