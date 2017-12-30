@@ -1,32 +1,34 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/Emiliolodigiani/bs3-partials.svg?style=flat-square)](https://packagist.org/packages/Emiliolodigiani/bs3-partials)
-[![Build Status](https://img.shields.io/travis/Emiliolodigiani/bs3-partials/master.svg?style=flat-square)](https://travis-ci.org/Emiliolodigiani/bs3-partials)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/xxxxxxxxx.svg?style=flat-square)](https://insight.sensiolabs.com/projects/xxxxxxxxx)
-[![Quality Score](https://img.shields.io/scrutinizer/g/Emiliolodigiani/bs3-partials.svg?style=flat-square)](https://scrutinizer-ci.com/g/Emiliolodigiani/bs3-partials)
-[![Total Downloads](https://img.shields.io/packagist/dt/Emiliolodigiani/bs3-partials.svg?style=flat-square)](https://packagist.org/packages/Emiliolodigiani/bs3-partials)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/emiliolodigiani/laravel-bs3.svg?style=flat-square)](https://packagist.org/packages/emiliolodigiani/laravel-bs3)
+[![Build Status](https://travis-ci.org/emiliolodigiani/laravel-bs3.svg?branch=master)](https://travis-ci.org/emiliolodigiani/laravel-bs3)
+[![Total Downloads](https://img.shields.io/packagist/dt/emiliolodigiani/laravel-bs3.svg?style=flat-square)](https://packagist.org/packages/emiliolodigiani/laravel-bs3)
 
-**Note:** Replace ```Emilio Lodigiani``` ```:author_username``` ```emiliolodigiani@gmail.com``` ```bs3-partials``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Package for adding precomposed Twitter Bootstrap 3 view partials, such as forms, form inputs, panels, buttons, etc.  
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require emiliolodigiani/bs3-partials
+composer require emiliolodigiani/laravel-bs3
 ```
 
 ## Usage
 
+In blade templates:
+
+For a back button
 ``` php
-$skeleton = new Emiliolodigiani\Skeleton();
-echo $skeleton->echoPhrase('Hello, Emiliolodigiani!');
+@include('bs3::button.backButton')
 ```
 
 ### Testing
 
+``` bash
+phpunit
+```
+or
 ``` bash
 composer test
 ```
