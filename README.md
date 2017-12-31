@@ -20,10 +20,51 @@ composer require emiliolodigiani/laravel-bs3
 
 In blade templates:
 
-For a back button
-``` php
+#### Back button
+``` blade
 @include('bs3::button.backButton')
 ```
+
+#### Simple panel
+```blade
+@component('bs3::component.panel', ['title' => 'Panel Title'])
+    <p>Panel content.</p>
+@endcomponent
+```
+
+#### Full featured panel
+
+```blade
+<div class="row">
+    @component('bs3::component.panel', [
+        'grid' => 'col-md-6', {{-- Optional --}}
+        'type' => 'success', {{-- Optional: (default) | success | warning | danger | info --}}
+        'title' => 'Panel Heading', {{-- Optional --}}
+        'titleIcon' => 'user' {{-- Optional, generates a Font Awesome fa-user icon --}}
+
+    ])
+        <p>Panel content, optional.</p>
+
+        @slot('table') {{-- Optional --}}
+            <table class="table table-hover">
+                ... 
+            </table>
+        @endslot
+        @slot('footer') {{-- Optional --}}
+            <p>Panel footer.</p>
+        @endslot
+    @endcomponent
+    
+    ... other panels ...
+</div>
+```
+
+
+### Completion in PhpStorm
+In PhpStorm setting go to `Language & Frameworks > PHP > Laravel > Views / Template`, add a new setting with the following:
+
+- Project-Path: `vendor/emiliolodigiani/laravel-bs3/resources/views`
+- Namespace: `bs3`
 
 ### Testing
 
