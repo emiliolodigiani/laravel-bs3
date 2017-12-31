@@ -23,16 +23,19 @@ In blade templates:
 #### Back button
 ``` blade
 @include('bs3::button.backButton')
+@include('bs3::button.backButton', ['href' => 'SOMEURL', 'text' => 'Back', 'icon' => 'chevron-left'])
 ```
+Back url default to previous visited url. Icon defaults to `chevron-left` (Font Awesome).
 
-#### Simple panel
+#### Panel
+Simple panel
+
 ```blade
 @component('bs3::component.panel', ['title' => 'Panel Title'])
     <p>Panel content.</p>
 @endcomponent
 ```
-
-#### Full featured panel
+Full featured panel
 
 ```blade
 <div class="row">
