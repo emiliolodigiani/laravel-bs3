@@ -10,7 +10,7 @@
             </label>
         </div>
 
-        @include('common.form.partial.error')
-        @include('common.form.partial.info')
+        @include('bs3::form.partial.error')
+        @include('bs3::form.partial.info')
     </div>
 </div>

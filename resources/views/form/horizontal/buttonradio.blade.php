@@ -1,6 +1,6 @@
 <?php $value = $value ?? (isset($model) && $model != null ? $model->$name : ''); ?>
 <div class="form-group{{ $errors->has($name) ? ' has-error' : '' }}">
-    @include('common.form.partial.label', ['labelClass' => 'col-sm-2 control-label'])
+    @include('bs3::form.partial.label', ['labelClass' => 'col-sm-2 control-label'])
     <div class="col-sm-10">
         <div class="btn-group btn-evidenza_" data-toggle="buttons">
             @foreach($options as $loopKey => $loopValue)
@@ -9,7 +9,7 @@
                 </label>
             @endforeach
         </div>
-        @include('common.form.partial.error')
-        @include('common.form.partial.info')
+        @include('bs3::form.partial.error')
+        @include('bs3::form.partial.info')
     </div>
 </div>

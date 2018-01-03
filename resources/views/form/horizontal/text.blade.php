@@ -4,8 +4,8 @@
 $dotName = str_replace('[', '.', str_replace(']', '', $name));
 ?>
 <?php $value = $value ?? (isset($model) && $model != null ? $model->$name : ''); ?>
-<div class="form-group @include('common.form.partial.errorClass', ['name' => $dotName])">
-    @include('common.form.partial.label', ['labelClass' => 'col-sm-2 control-label'])
+<div class="form-group @include('bs3::form.partial.errorClass', ['name' => $dotName])">
+    @include('bs3::form.partial.label', ['labelClass' => 'col-sm-2 control-label'])
     <div class="col-sm-10">
         <?php
         $placeholder = $placeholder ?? '';
@@ -18,7 +18,7 @@ $dotName = str_replace('[', '.', str_replace(']', '', $name));
         <input type="{{ $type or 'text' }}" class="form-control" id="{{$name}}" name="{{$name}}" placeholder="{{$placeholder}}" value="{{ old($dotName, $value) }}">
         {!! isset($after) ? '<div class="input-group-addon">'.$after.'</div>' : '' !!}
         {!! isset($before) || isset($after) ? '</div>' : '' !!}
-        @include('common.form.partial.error', ['name' => $dotName])
-        @include('common.form.partial.info')
+        @include('bs3::form.partial.error', ['name' => $dotName])
+        @include('bs3::form.partial.info')
     </div>
 </div>

@@ -1,6 +1,6 @@
 <?php $value = $value ?? (isset($model) && $model != null ? $model->$name : ''); ?>
-<div class="form-group {{ $grid ?? '' }} @include('common.form.partial.errorClass')" {{ $extra ?? '' }}>
-    @include('common.form.partial.label', ['labelClass' => 'control-label'])
+<div class="form-group {{ $grid ?? '' }} @include('bs3::form.partial.errorClass')" {{ $extra ?? '' }}>
+    @include('bs3::form.partial.label', ['labelClass' => 'control-label'])
 
         <select class="form-control {{$class ?? ''}}" id="{{$name}}" name="{{$name}}">
             @if(isset($empty))
@@ -11,7 +11,7 @@
             @endforeach
         </select>
 
-        @include('common.form.partial.error')
-        @include('common.form.partial.info')
+        @include('bs3::form.partial.error')
+        @include('bs3::form.partial.info')
 
 </div>

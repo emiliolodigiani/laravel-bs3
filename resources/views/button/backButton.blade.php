@@ -1,1 +1,1 @@
-@include('common.component.button', ['href' => $href ?? back()->getTargetUrl(), 'text' => 'indietro' , 'icon' => 'chevron-left'])
+@include('bs3::component.button', ['href' => $href ?? back()->getTargetUrl(), 'text' => 'indietro' , 'icon' => 'chevron-left'])

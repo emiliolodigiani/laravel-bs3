@@ -4,8 +4,8 @@
 $dotName = str_replace('[', '.', str_replace(']', '', $name));
 ?>
 <?php $value = $value ?? (isset($model) && $model != null ? $model->$name : ''); ?>
-<div class="form-group {{ $grid ?? '' }} @include('common.form.partial.errorClass', ['name' => $dotName])" {{ $extra ?? '' }} >
-    @include('common.form.partial.label')
+<div class="form-group {{ $grid ?? '' }} @include('bs3::form.partial.errorClass', ['name' => $dotName])" {{ $extra ?? '' }} >
+    @include('bs3::form.partial.label')
     <?php
     $placeholder = $placeholder ?? '';
     if (is_a($value, 'Carbon\Carbon')) {
@@ -18,6 +18,6 @@ $dotName = str_replace('[', '.', str_replace(']', '', $name));
     {!! isset($after) ? '<div class="input-group-addon">'.$after.'</div>' : '' !!}
     {!! isset($before) || isset($after) ? '</div>' : '' !!}
 
-    @include('common.form.partial.error')
-    @include('common.form.partial.info')
+    @include('bs3::form.partial.error')
+    @include('bs3::form.partial.info')
 </div>
